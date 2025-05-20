@@ -1,0 +1,46 @@
+/* CSS File for BDOGrotesk Font Family */
+
+@font-face {
+  font-family: "BDO Grotesk";
+  src: url("BDOGrotesk/BDOGrotesk-Black-BF648a656f81fe9.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BDO Grotesk";
+  src: url("BDOGrotesk/BDOGrotesk-DemiBold-BF648a656f9c460.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BDO Grotesk";
+  src: url("BDOGrotesk/BDOGrotesk-ExtraBold-BF648a656f31316.otf")
+    format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BDO Grotesk";
+  src: url("BDOGrotesk/BDOGrotesk-Light-BF648a656f91fcb.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BDO Grotesk";
+  src: url("BDOGrotesk/BDOGrotesk-Medium-BF648a656fc86b8.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BDO Grotesk";
+  src: url("BDOGrotesk/BDOGrotesk-VF-BF648a657078401.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
