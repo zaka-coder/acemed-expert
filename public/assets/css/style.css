@@ -3489,7 +3489,13 @@ body::-webkit-scrollbar-thumb {
 .money-back-guarantee{
   animation: moveLeftRight 2s ease-in-out infinite alternate;
 }
-
+@media(max-width:768px){
+  .money-back-guarantee{
+    bottom: 0!important;
+    right: 0!important;
+    z-index: 3!important;
+  }
+}
 @media only screen and (max-width: 1599.98px) {
   .hero-four__shape-1 {
     width: 150px;

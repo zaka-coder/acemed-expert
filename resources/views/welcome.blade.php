@@ -16,6 +16,7 @@
 
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon-96x96.png') }}" sizes="96x96" />
 
     <!-- bootstrap icons -->
     <link rel="stylesheet"
@@ -53,7 +54,7 @@
     <header class="header section sticky">
         <div class="container">
             <div class="header__main">
-                <a class='header__logo' href='#'>
+                <a class='header__logo' href='{{ url('/') }}'>
                     <img src="{{ asset('assets/images/logo.png') }}" class="object-fit-contain" height="50px"
                         width="200px" alt="logo" />
                 </a>
@@ -61,10 +62,13 @@
                     <nav>
                         <ul>
                             <li>
-                                <a href='#'> About Us </a>
+                                <a href='#aboutUs'> About Us </a>
                             </li>
                             <li>
-                                <a href='#'> Contact Us </a>
+                                <a href='#ourServices'> Our Services </a>
+                            </li>
+                            <li>
+                                <a href='#whyChooseUs'> Why Choose us </a>
                             </li>
                         </ul>
                     </nav>
@@ -93,7 +97,7 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title">
-                <a class='header__logo' href='#'>
+                <a class='header__logo' href='{{ url('/') }}'>
                     <img src="{{ asset('assets/images/logo.png') }}" class="object-fit-contain" height="50px"
                         width="200px" alt="logo" />
                 </a>
@@ -120,7 +124,7 @@
                                 <span class="title-l1 text-decoration-underline primary-text-color">
                                     AceMed Experts
                                 </span>
-                                <span class="me-2" style="font-size: 65px">Quiz? Exam? Assignment? We’ll Handle
+                                <span class="me-2">Quiz? Exam? Assignment? We’ll Handle
                                     It</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="88"
                                     viewBox="0 0 159 44" fill="none">
@@ -202,7 +206,7 @@
 
         <!-- ================= About Section Start ================= -->
         <section id="about-us4" class="about-us4 section bg-color-1 section-padding-top-bottom overflow-hidden">
-            <div class="container">
+            <div id="aboutUs" class="container">
                 <div class="row g-4 justify-content-between">
                     <div class="col-lg-6 col-xl-5">
                         <div class="about-us4__thumb gsap-pop" data-direction="left">
@@ -313,7 +317,7 @@
 
         <!-- ================= Service Section Start ================= -->
         <section class="service4 bg-color-1 section-padding-top-bottom">
-            <div class="container">
+            <div id="ourServices" class="container">
                 <div class="row section-header justify-content-between align-items-start row-padding-bottom">
                     <div class="col-lg-6 col-xl-6">
                         <h2 class="section-title move-anim">
@@ -405,8 +409,8 @@
         <!-- ================= Service Section End ================= -->
 
         <!-- ================= Portfolio Section Start ================= -->
-        <section class="portfolio4 section bg-color-2 section-padding-top-bottom">
-            <div class="container">
+        <section class="portfolio4  section bg-color-2 section-padding-top-bottom">
+            <div id="whyChooseUs" class="container">
                 <div class="row g-4 section-header justify-content-between align-items-start row-padding-bottom">
                     <div class="col-md-12">
                         <h2 class="section-title move-anim">
@@ -1225,8 +1229,8 @@
                         <div class="row">
                             <div class="col-12 col-lg-11 col-xxl-8">
                                 <div class="footer-main2__content gsap-pop overflow-hidden">
-                                    <img src="{{ asset('assets/images/thumb-up-doc.png') }}" alt="footer-thumb"
-                                        class="w-100 rounded" />
+                                    <img src="{{ asset('assets/images/logo.png') }}" class="object-fit-contain"
+                                        height="50px" width="200px" alt="logo" />
                                 </div>
                             </div>
                         </div>
@@ -1234,13 +1238,16 @@
                     <div class="col-sm-4">
                         <div class="footer-widgets ms-auto gsap-pop">
                             <div class="footer-links">
-                                <h5 class="title">Services</h5>
+                                <h5 class="title">Quick Links</h5>
                                 <ul class="custom-ul">
                                     <li>
-                                        <a href='service-details.html'>Services</a>
+                                        <a href='#aboutUs'>About Us</a>
                                     </li>
                                     <li>
-                                        <a href='service-details.html'>Our records</a>
+                                        <a href='#ourServices'>Our Services</a>
+                                    </li>
+                                    <li>
+                                        <a href='#whyChooseUs'>Why Choose Us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1273,22 +1280,9 @@
                         <div class="footer-bottom__content has-border-top">
                             <p class="copyright order-2 order-md-0">
                                 <i class="fa-regular fa-copyright"></i>
-                                <a href='index.html'>AceMed Experts</a>
+                                <a href='{{ url('/') }}'>AceMed Experts</a>
                                 <span class="agx-current-year"></span> | All Rights Reserved
                             </p>
-                            <div class="footer-menu order-1 order-md-2">
-                                <ul class="custom-ul">
-                                    <li>
-                                        <a href="index-4.html#"> Trams & Condition </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-4.html#"> Privacy Policy </a>
-                                    </li>
-                                    <li>
-                                        <a href='contact-us.html'> Contact Us </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
